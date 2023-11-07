@@ -1,0 +1,99 @@
+.createAccountFaqContainer {
+  margin-top: 2.85rem;
+}
+
+.createAccountHeroContainer {
+  margin-top: 1.5rem;
+}
+
+.createAccount {
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 61.5rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  content: '1';
+}
+
+@media screen and (min-width: 960px) {
+  .createAccount {
+    content: '2';
+    padding: 0 2.625rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .createAccount {
+    content: '2';
+    padding: 0 2rem;
+  }
+}
+
+.createAccountForm {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.createAccountTextTitle {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 960px) {
+  .createAccountTextTitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+.createAccountInputContainer {
+  text-align: left;
+  position: relative;
+  margin: 1rem auto 0;
+  width: 100%;
+  max-width: 36.625rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.createAccountInputContainer[data-issplitform='false'] {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.createAccountInputContainer>div {
+  width: 100%;
+}
+
+.createAccountInputContainer[data-issplitform='false']>div {
+  width: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.createAccountInputContainer button {
+  margin-left: 0.5rem;
+}

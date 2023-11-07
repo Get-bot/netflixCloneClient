@@ -1,0 +1,176 @@
+.cardFaqAccordionItem {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.cardFaqAccordionItemContainer {
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: inherit;
+  font-weight: inherit;
+  margin-bottom: 0.0625rem;
+  position: relative;
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.cardFaqAccordionItemContainer:hover {
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  background-color: rgb(65, 65, 65);
+}
+
+.cardFaqAccordionItemButton {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  border-radius: 0;
+  border: 0;
+  box-sizing: content-box;
+  color: inherit;
+  cursor: default;
+  display: inline;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: left;
+}
+
+.cardFaqAccordionItemContainer > button {
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 960px) {
+  .cardFaqAccordionItemContainer > button {
+    padding: 1.5rem;
+  }
+}
+
+.cardFaqAccordionItemButton:focus {
+  outline: none;
+  outline: #a9a9a9 auto 5px;
+  outline: Highlight auto 5px;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.cardFaqAccordionItemContainer > button:focus {
+  outline: none;
+  outline: rgb(255, 255, 255) solid 0.125rem;
+  outline-offset: 0.125rem;
+}
+
+.cardFaqAccordionItemButton:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.cardFaqAccordionItemContainer > button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.cardFaqAccordionItemMobilePlusIcon {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+@media screen and (min-width: 960px) {
+  .cardFaqAccordionItemMobilePlusIcon {
+    display: none;
+  }
+}
+
+.cardFaqAccordionItePlusIcon {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.cardFaqAccordionItemCancelIcon {
+  flex-shrink: 0;
+  transform: rotate(-45deg);
+}
+
+.cardFaqAccordionItemMobileCancelIcon {
+  flex-shrink: 0;
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 960px) {
+  .cardFaqAccordionItemMobileCancelIcon {
+    display: none;
+  }
+}
+
+.cardFaqAccordionItemContentClose {
+  overflow: hidden;
+  max-height: 0;
+  visibility: collapse;
+  max-height: 0;
+  padding: 0 1.5rem;
+  -webkit-transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  text-align: left;
+  background-color: rgb(45,45,45);
+  color: rgb(255,255,255);
+}
+
+.cardFaqAccordionItemContentOpen {
+  overflow: hidden;
+  visibility: visible;
+  max-height: 0px;
+  padding: 0px 1.5rem;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+  text-align: left;
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+}
+
+.cardFaqAccordionItemContentOpen[data-is-open="true"] {
+  max-height: 75rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}

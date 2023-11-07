@@ -1,0 +1,65 @@
+.startButton {
+  appearance: none;
+  font-style: inherit;
+  font-variant: inherit;
+  font-stretch: inherit;
+  font-family: inherit;
+  font-optical-sizing: inherit;
+  font-kerning: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  margin: 0px;
+  text-decoration: none;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 1;
+  user-select: none;
+  border: 0px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  fill: currentcolor;
+  position: relative;
+  transition-duration: 250ms;
+  transition-property: background-color, border-color;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+  vertical-align: text-top;
+  width: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  min-height: 3.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.startButtonIconArea {
+  display: inline-block;
+  height: 1.5rem;
+}
+
+.startButtonIconArea >svg {
+  width: 1.5rem;
+  height: inherit;
+  margin-left: 0.5rem;
+  margin-right: 0rem;
+}
+
+.startButtonIconArea::after {
+  inset: 0px;
+  position: absolute;
+  transition: inherit;
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-radius: 0.1875rem;
+  content: "";
+  border-color: rgba(0, 0, 0, 0);
+}

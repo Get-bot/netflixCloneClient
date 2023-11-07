@@ -1,0 +1,118 @@
+
+.cardFaqContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: auto;
+  padding: 3.5rem 0;
+  background: #000000;
+}
+
+@media screen and (min-width: 600px) {
+  .cardFaqContainer {
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+}
+
+
+@media screen and (min-width: 960px) {
+  .cardFaqContainer {
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+}
+
+.cardFaqContentContainer {
+  margin: auto;
+  max-width: calc(100% - 3rem);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .cardFaqContentContainer {
+    max-width: calc(100% - 4rem);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .cardFaqContentContainer {
+    max-width: calc(100% - 4rem);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cardFaqContentContainer {
+    max-width: calc(83.33333333333334% - 6rem);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .cardFaqContentContainer {
+    max-width: calc(66.66666666666666% - 6rem);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .cardFaqContentContainer {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.cardFaqContent {
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.cardFaqTextTitle {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 960px) {
+  .cardFaqTextTitle {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}
+
+.cardFaqAccordionContainer {
+  margin: 1.5rem 0 0;
+}
+
+.cardFaqAccordion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: inherit;
+}

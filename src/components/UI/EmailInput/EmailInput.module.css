@@ -1,0 +1,242 @@
+/*
+.emailInputContainer {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  vertical-align: text-top;
+}
+
+.emailInputLabel {
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.label {
+
+}
+
+.emailInputContainer .label {
+  position: absolute;
+  z-index: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-property: top, font-size, line-height;
+  transition-duration: 250ms;
+  pointer-events: none;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+  left: 1rem;
+  right: 1rem;
+  top: 1rem;
+}
+
+.emailInputContainer .label {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.emailInputArea {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: black;
+  fill: black;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 400;
+  gap: 2px;
+  letter-spacing: normal;
+  line-height: 100%;
+  padding: 2px;
+  position: relative;
+  text-align: left;
+  z-index: 0;
+}
+
+.area {
+
+}
+
+.emailInputContainer .area {
+  fill: currentcolor;
+  min-width: 12.5rem;
+  padding: 0px;
+  width: 100%;
+}
+
+.emailInputContainer .area {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.emailInputArea > input {
+  -webkit-animation: animation-14hycbg;
+  animation: animation-14hycbg;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: transparent;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 0 solid transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin: 0;
+  min-width: 15px;
+  min-height: 15px;
+  padding: 0;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+}
+
+.emailInputContainer .area > input {
+  min-height: 16px;
+  min-width: 16px;
+}
+
+.emailInputContainer .area > input {
+  width: 100%;
+  color: inherit;
+  filter: opacity(0%);
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.emailInputContainer .area > input {
+  line-height: 1.5;
+}
+
+.emailInputWarning {
+  color: transparent;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: white;
+  border-radius: 2px;
+  border: 1px solid black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.warning {
+
+}
+
+.emailInputContainer input ~ .warning {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25rem;
+}
+
+.emailInputContainer input ~ .warning {
+  background: rgba(22, 22, 22, 0.7);
+  border-color: rgba(128, 128, 128, 0.7);
+}
+
+*/
+.inputField {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  vertical-align: text-top;
+}
+
+.inputContainer {
+  position: relative;
+  background-color: hsl(var(--Gray), 0.7);
+  border: 1px solid hsl(var(--Light-gray));
+  border-radius: 0.25rem;
+  color: white;
+  display: inline-flex;
+  min-width: auto;
+  width: auto;
+  flex-grow: 1;
+  min-height: 3.2rem;
+  cursor: text;
+}
+
+.inputContainer label {
+  transition: all 100ms;
+  color: hsl(0, 0%, 100%, 0.8);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.inputContainer.activeLabel label {
+  font-size: 0.7rem;
+  top: 0.8rem;
+}
+
+.inputContainer input {
+  width: 100%;
+  font-size: 1rem;
+  font-family: Netflix Sans, sans-serif;
+}
+
+@media (min-width: 600px) {
+  .inputContainer {
+    padding: 1.5rem 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.outLine {
+  outline: rgb(255, 255, 255) solid 0.125rem;
+  outline-offset: 0.125rem;
+}
+
+.errorBorder {
+  border-color: rgb(235, 57, 66);
+}
+
+.successBorder {
+  border-color: rgb(43, 184, 123);
+}
+
+.inputError {
+  fill: currentcolor;
+  margin-top: 0.25rem;
+  width: 100%;
+  font-size: 0.8125rem;
+  color: rgb(235, 57, 66);
+}
+
+.inputErrorIcon {
+  margin-right: 0.25rem;
+  position: relative;
+  top: 0.1875rem;
+}
+
+

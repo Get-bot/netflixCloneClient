@@ -1,0 +1,36 @@
+.gridItemsContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: auto;
+  padding: 3.5rem 0;
+  background: #000000;
+}
+
+@media screen and (min-width: 600px) {
+  .gridItemsContainer {
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gridItemsContainer {
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+}
+
+
+
+
