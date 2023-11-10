@@ -1,0 +1,70 @@
+.nfHeader {
+  background-color: #fafafa;
+  border-bottom: 1px solid #dcdde0;
+  z-index: 2;
+}
+
+.signupBasicHeader {
+
+}
+
+.hybridLoginWrapper {
+
+}
+
+.nfHeader, .nfHeader.signupBasicHeader {
+  height: 90px;
+}
+
+.loginHeader {
+
+}
+
+.hybridLoginWrapper .nfHeader {
+  background: none;
+  border: 0;
+}
+
+@media only screen and (min-width: 740px) {
+  .nfHeader.loginHeader.signupBasicHeader {
+    background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, transparent);
+    border-bottom: transparent;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.svgNfLogo {
+  fill: #e50914;
+  display: inline-block;
+  line-height: 90px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.svgNfLogo.signupBasicHeader {
+  margin-left: 3%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.svgNfLogo .svgIconNetflixLogo {
+  height: 45px;
+  vertical-align: middle;
+  width: 167px;
+}
+
+.svgIconNetflixLogo {
+
+}
+.screenReaderText {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+

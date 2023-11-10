@@ -1,14 +1,16 @@
+import {useNavigate} from "react-router-dom";
+
 import {useAppSelector, useAppDispatch} from "../../store/hooks";
-import {selectAuthUser} from "../../features/auth/authSlice";
+import {selectAuthState} from "../../features/auth/authSlice";
 import { fetchUserAsync } from "../../features/test/testSlice";
-import {history} from "../../helpers/history";
 
 const TestPage = () => {
-  const authUser = useAppSelector(selectAuthUser);
+  const navigate = useNavigate();
+  const authState = useAppSelector(selectAuthState);
   const dispatch = useAppDispatch();
 
-  if(!authUser) {
-    history.navigate("/signin");
+  if(!authState.isLoggedIn) {
+    navigate("/signin");
   }
 
   const getAll = () => {

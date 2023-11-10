@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="netflix-clone">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/assets/netflix-clone.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

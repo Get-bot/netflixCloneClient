@@ -1,6 +1,5 @@
 import {createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchWrapper} from "../../helpers/fetch-wrapper";
-import { history } from "../../helpers/history";
 import {RootState} from "../../store/store";
 
 interface IUser {
@@ -18,12 +17,14 @@ interface IUserAuthArgs {
 
 interface AuthState {
   user: IUser | undefined;
+  isLoggedIn: boolean;
   isLoading: boolean;
   error: string | undefined;
 }
 
 const initialState: AuthState = {
   user: localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")!) : undefined,
+  isLoggedIn: !!localStorage.getItem("user"),
   isLoading: false,
   error: undefined
 }
@@ -39,8 +40,8 @@ export const authSlice = createSlice({
   reducers: {
     logout: (state) => {
       state.user = undefined;
+      state.isLoggedIn = false;
       localStorage.removeItem("user");
-      history.navigate("/login");
     }
   },
   extraReducers: (builder) => {
@@ -52,7 +53,7 @@ export const authSlice = createSlice({
         state.isLoading = false;
         state.user = action.payload;
         localStorage.setItem("user", JSON.stringify(action.payload));
-        history.navigate("/");
+        state.isLoggedIn = true;
       })
       .addCase(signInAsync.rejected, (state, action) => {
         state.isLoading = false;
@@ -61,9 +62,12 @@ export const authSlice = createSlice({
   }
 })
 
+export const selectAuthState = (state: RootState) => state.auth;
+
 export const selectAuthUser = (state: RootState) => state.auth.user;
-export const selectAuthIsLoading = (state: RootState) => state.auth.isLoading;
 export const selectAuthError = (state: RootState) => state.auth.error;
+
+export const selectIsLoggedIn = (state: RootState) => state.auth.isLoggedIn;
 
 export const authAction = authSlice.actions;
 

@@ -1,0 +1,16 @@
+.loginWrapperBackground{
+  background-size: cover;
+  display: block;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: .5;
+}
+
+.loginWrapperBackgroundImage{
+  min-height: 100%;
+  min-width: 100%;
+}
